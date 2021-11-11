@@ -14,7 +14,6 @@ html {
 
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 p {
@@ -9411,14 +9410,16 @@ a > .bootstrap-styles code {
   }
 }
 
-.body {
+.inner-body {
   position: relative;
+  overflow-x: hidden;
 }
 
 .heading {
   position: fixed;
-  width: 100%;
+  z-index: 10;
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   top: 0;
   padding: 1rem;
